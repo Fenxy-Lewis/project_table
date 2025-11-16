@@ -1,0 +1,144 @@
+/*footer*/
+.parent_footer {
+    width: 100%;
+    height: 350px;
+    background-color:#f15a29;
+}
+
+.footer_container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    color: white;
+    padding: 40px 80px;
+}
+
+.logo_footer {
+    display: flex;
+    align-items: center;
+}
+
+.logo_footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.logo_footer h3 {
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: transform 0.2s, color 0.2s ease;
+}
+
+.logo_footer h3:hover {
+    transform: translateX(8px);
+    color: orange;
+    cursor: pointer;
+}
+
+.main_footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.menu_type a {
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    line-height: 1.6;
+    /* font-weight: bold; */
+    transition: transform 0.2s, color 0.2s ease;
+}
+
+.menu_type a:hover {
+    transform: translateX(8px);
+    color: orange;
+}
+
+.menu_type p {
+    font-weight: bold;
+}
+
+.menu_type h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.contact_child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.icon_foot{
+    width: 15px;
+    height: 15px;
+    color: white;
+}
+
+.copy_right {
+    text-align: center;
+    color: rgb(238, 232, 232);
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cover_text {
+    h1 {
+        font-size: 50px;
+        font-weight: bolder;
+        letter-spacing: 0.2px;
+    }
+
+    h4 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.text_contact {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+}
+
+.desc_cover {
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+}
+
+/*footer*/
+
+/* Responesive */
+@media (max-width: 768px) {
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .main_footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .menu_type {
+        align-items: center;
+    }
+    .logo_footer{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .copy_right{
+        font-size: 12px;
+        padding: 0px 12px;
+        padding-bottom: 20px;
+    }
+}
