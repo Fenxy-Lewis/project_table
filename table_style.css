@@ -5,6 +5,7 @@
   font-family: Krasar;
   scroll-behavior: smooth;
   text-decoration: none;
+  scrollbar-width: none;
 }
 :root {
   --primary-color: #f15a29;
@@ -33,13 +34,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 30px;
-  background-color: var(--primary-color);
+  padding: 10px 30px;
+  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100000000;
+  padding-bottom: 15px;
 }
 .logo_header {
   display: flex;
@@ -47,14 +49,23 @@ header {
   gap: 10px;
 }
 .logo_header img {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border-radius: 50%;
 }
-.logo_header h1 {
+.logo_name{
+  display: flex;
+  flex-direction: column;
+  line-height: 1;margin-top: -5px;
+}
+.logo_name h1 {
   font-size: 22px;
   color: var(--text-nav-color);
+}
+.logo_name p{
+  margin-top: -11px;
+  color: gainsboro;
 }
 .nav_bar ul {
   display: flex;
@@ -69,12 +80,12 @@ header {
   font-weight: bold;
   font-size: var(--nav_font-size);
   transition: color 0.3s ease;
-  margin-left: 20px;
+  margin-right: 80px;
 }
 .sign_in_icon {
   width: 34px;
   height: 34px;
-  color: black;
+  color: white;
 }
 .text_login a {
   display: flex;
